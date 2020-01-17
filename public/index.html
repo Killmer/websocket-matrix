@@ -5,12 +5,13 @@
         <meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no">
         <title>WebSocket</title>
         <link rel="stylesheet" href="app.css">
+        <link rel="icon" href="./images/favicon.jpeg" type="image/jpeg" sizes="16x16">
     </head>
 
     <body>
         <header>
-            <h1>CodeDojo</h1>
-            <span id="status">OFFLINE</span>
+            <h1>MATRIX status</h1>
+            <span id="status">DISCONNECTED</span>
         </header>
 
         <main>
@@ -21,6 +22,23 @@
                 <input type="text" id="input" required autofocus autocomplete="off">
             </form>
         </main>
+        <div id="white-rabbit">
+            <img src="./images/white-rabbit.png" alt="white-rabbit">
+            <p>Ask for Morpheus!</p>
+        </div>
+        <img  id="matrix-gif" src="./images/matrix-gif.gif" alt="matrix">
+        <audio id="matrix-theme">
+            <source src="./sounds/matrix-theme.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="knock">
+            <source src="./sounds/door-knock.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="server-message">
+            <source src="sounds/server-message.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="matrix-final">
+            <source src="sounds/The Matrix - final.mp3" type="audio/mpeg">
+        </audio>
 
         <script src="app.js"></script>
     </body>

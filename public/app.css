@@ -8,9 +8,45 @@ header {
     text-align: center;
 }
 
+#matrix-gif {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+}
+
+#white-rabbit {
+    opacity: 0;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+}
+
+#white-rabbit img {
+    height: 200px;
+    border-radius: 50%;
+}
+
+#white-rabbit p {
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 130px;
+    left: 40%;
+}
+
+#white-rabbit:hover {
+    opacity: 1 !important;
+}
+
 #messages {
     margin-left: 1em;
     list-style: none;
+}
+
+#messages li {
+    padding-bottom: 0.5em;
 }
 
 #form {
