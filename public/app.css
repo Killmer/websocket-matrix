@@ -4,10 +4,21 @@ body {
     font-family: 'Consolas', monospace;
 }
 
-header {
-    text-align: center;
+::-webkit-scrollbar {
+    display: none;
 }
-
+header {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    background: black;
+    top: 0;
+}
+ main {
+     padding-top: 130px;
+ }
 #matrix-gif {
     display: none;
     position: fixed;
