@@ -34,7 +34,6 @@ function showMessage(value) {
 
 function printMessage(value) {
     if(value === "Come with me... It's time to know the TRUTH!") {
-        // showMessage(value);
         // document.getElementById('matrix-theme').pause();
         // document.getElementById('matrix-theme').play();
         setTimeout(() => {
