@@ -40,6 +40,7 @@ server.on('connection',  ws => {
     const AGREE = ['Yes', 'Sure', 'Of course','ofcource', 'always', 'yeah', 'yeap'];
     const DISAGREE = ['No','Nope', `don't`, 'dont', 'do not', 'never', `didn't`, 'did not', 'nuh'];
     //Flags for dialogs
+    let startDialog = true;
     let fateOptions = false;
     let whyNot = false;
     let whyHereMonolog = false;
@@ -63,7 +64,8 @@ server.on('connection',  ws => {
     //Dialogs
     ws.on('message', message => {
 
-        if(includeText('Morpheus', message)) {
+        if(startDialog && (includeText('Morpheus', message))) {
+            startDialog = false;
             showClientMessage(message);
             setTimeout(() =>  ws.send("I'm here Neo!"), 4000);
             setTimeout(() =>  ws.send("Do you believe in fate?"), 7000);
